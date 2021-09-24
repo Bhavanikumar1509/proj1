@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+    window.onload = function(){
+        window.displayImgCount = 0;
+        function cycleImage(){
+            if (displayImgCount !== 0) {
+                document.getElementById("img" + displayImgCount).style.display = "none";
+            }
+            displayImgCount = displayImgCount === 5 ? 1 : displayImgCount + 1;
+            document.getElementById("img" + displayImgCount).style.display = "block";
+            setTimeout(cycleImage,3500);
+        }
+        cycleImage();
+    }
+</script>
+</head>
+<body>
+    <img id="img1" src="https://soppy-alternate.000webhostapp.com/home/img1.jpg" style="display:none; height=423px; width=485px;">
+    
+    <img id="img2" src="https://soppy-alternate.000webhostapp.com/home/img2.png" style="display:none; height=500px; width=500px;">
+    
+    <img id="img3" src="https://soppy-alternate.000webhostapp.com/home/img3.jpg" style="display:none; height=500px; width=500px;">
+    
+    <img id="img4" src="https://soppy-alternate.000webhostapp.com/home/img5.jpg" style="display:none; height=300px; width=900px;">
+    
+    <img id="img5" src="https://soppy-alternate.000webhostapp.com/home/img6.jpg" style="display:none; height=500px; width=500px;">
+   
+</body>
+</html>

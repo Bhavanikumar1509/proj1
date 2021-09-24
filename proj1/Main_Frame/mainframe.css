@@ -1,0 +1,228 @@
+html{ 
+    margin: 0 ;
+    padding: 0 ;
+    }
+body {
+    margin: 20px auto;
+    font-family: "Lato";
+    font-weight: 300;
+    background-image:url("img.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    }
+.vertical-menu {
+  width: 200px; /* Set a width if you like */
+}
+
+.vertical-menu a {
+  background-color: #eee; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.vertical-menu a:hover {
+  background-color: #ccc; /* Dark grey background on mouse-over */
+}
+
+.vertical-menu a.active {
+  background-color: #4CAF50; /* Add a green color to the "active/current" link */
+  color: white;
+}
+   
+  form {
+    padding: 15px 15px;
+    display: flex;
+    max-width:95%;
+    justify-content:center;
+    border:1px solid white;
+    background-color:#008B8B;
+  }
+   
+  form label {
+    font-size: 1.5rem;
+    font-weight: bold;
+    }
+   
+  input {
+    font-family: "Lato";
+    padding:10px;
+  }
+   
+  a {
+    color: #0000ff;
+    text-decoration: none;
+  }
+   
+  a:hover {
+    text-decoration: underline;
+  }
+ 
+  #wrapper,
+  #loginform {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #eee;
+    width: 750px ;
+    border: 2px solid #212121;
+    border-radius: 4px;
+
+
+  }
+   
+  #loginform {
+    padding-top: 18px;
+    text-align: center;
+  }
+   
+  #loginform p {
+    padding: 15px 25px;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+   
+  #chatbox {
+     display:flex;
+     flex-direction:column;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding: 10px;
+    height: 500px;
+    width: 700px;
+    background-color:white;
+    border: 1px solid #a7a7a7;
+    overflow: auto;
+    border-radius: 4px;
+    border-bottom: 4px solid #a7a7a7;
+     }
+  
+   
+  #usermsg {
+      
+    flex: 1;
+    border-radius: 4px;
+    border: 1px solid #ff9800;
+    background:#FFF;
+    font-size:18px;
+    
+  }
+   
+  #name {
+    border-radius: 4px;
+    border: 1px solid #ff9800;
+    padding: 2px 8px;
+  }
+   
+  #submitmsg,
+   #enter{
+    background-color:#E9967A;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 35px;
+    font-size:20px;
+    }
+   
+  .error {
+    color: #ff0000;
+  }
+   
+  #menu {
+    padding: 25px 25px;
+    display: flex;
+  }
+   
+  #menu p.welcome {
+     font-size:23px;
+    flex: 1;
+  }
+  .btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: RoyalBlue;
+}
+   
+  .msgln {
+    margin: 0 0 30px 0;
+    border:10px black;
+  }
+   
+  .msgln span.left-info {
+    color: #008080; /* cyan */
+    margin: auto;
+   border: 0px;
+   padding: 10px;
+    text-align : center ;
+ }
+   
+  .msgln span.chat-time {
+    color: black;
+    font-size: 90%;
+    vertical-align: super;
+
+  }
+   
+  .msgln b.user-name, .msgln b.user-name-left {
+   
+    color: black;
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 6px;
+
+
+  }
+   
+  .msgln b.user-name-left {
+    font-size :16px;
+    padding:8px 8px;
+
+    
+  }
+.dropbtn {
+  background-color: #1E90FF;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.msgln .text-msg{
+    background-color: #D3D3D3;
+    border-radius: 15px;
+    margin: 16px 16px;
+    padding: 15px 15px;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}

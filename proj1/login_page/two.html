@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Login</title>
+<style>
+ button{
+	border:none;
+	color:black;
+	padding:8px 18px;
+	text-align: center;
+	display: inline-block;
+	font-size: 15px;
+	margin: 4px 2px;
+	cursor:pointer;
+	background-color: #32CD32; 
+	border-radius: 20px;
+}
+body{
+	background-image: url("loginbg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+html, body {
+    width: 100%;
+}
+</style>
+<script>
+function validateform()
+{
+	var o=document.verify.otp;
+	var numbers=/^[0-9]+$/;
+	if(o.length<6||o.length>6)
+	{
+		alert("OTP must be 6 digits only");
+		o.focus();
+		return false;
+	}
+	else
+	{
+		if(o.value.match(numbers))
+			return true;
+		else
+		{
+			alert("OTP must be numbers only");
+			o.focus();
+			return false;
+		}
+	}
+}
+</script>
+</head>
+<body>
+    <form action="otp.php">
+<h2 align="center" style="font-size:40px; color:white;">Two Step Verification</h2>
+<table align="center" border="0">
+	<tr>
+		<td></td>
+		<td><button style="background-color:#00FFFF; font-size:25px; " >Request OTP</button></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>
